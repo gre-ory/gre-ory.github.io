@@ -6,233 +6,14 @@
   
   	<meta name="keywords" content="" />
   	<meta name="description" content="" />
-  
-    <!--
-      red: e63946
-      light gray: f1faee
-      light blue: a8dadc
-      dark blue: 457b9d
-      very dark blue: 1d3557
-    -->
     
+    <!-- font -->
+        
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   
-  	<!-- link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" / --> 
-  	<style>
-    
-      #resume {
-        margin: 10px auto;
-        width: 900px;
-        color: black;
-        background: #f5f5f5;
-        font-family: 'Roboto', sans-serif;
-        border: 1px solid #eee;
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-      }
-      
-      #header {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        background: #ccc;
-      } 
-      
-      #content .main-column {
-        border-right: 1px solid #aaa;
-      }
-      
-      #experience, #skills {
-        border-bottom: 1px solid #aaa;
-        padding-bottom: 20px;
-      }
-      
-      #header, #content, #footer {
-        display: inline-block;
-        width: 902px;
-      }
-      
-      .main-column {
-        display: inline-block;
-        vertical-align: top;
-        width: 690px;
-      } 
-      
-      #content {
-        padding: 10px;
-      }
-      
-      .main-column .section { 
-        width: 670px;
-      }
-      
-      .aside-column {
-        display: inline-block;
-        vertical-align: top;
-        width: 200px;
-      } 
-      
-      .aside-column .section { 
-        margin: 10px;
-        width: 180px;
-      }
-      
-      .section-title {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 110%;
-        margin-top: 20px;
-        margin-bottom: 10px;
-      }
-      
-      #footer {
-        display: inline-block;
-        width: 900px;
-        text-align: center;
-        font-style: italic;
-        padding-top: 10px;
-      }
-      
-      #footer .contact {
-        border-top: 1px solid #aaa;
-        width: 870px;
-        text-align: center;
-        margin-left: 10px;
-        margin: 0px auto;
-        padding: 10px 0px; 
-      }
-      
-      .dates {
-        width: 70px;
-        display: inline-block;
-        padding-left: 10px;
-      }
-      
-      .content {
-        width: 580px;
-        display: inline-block;
-      }
-      
-      .item {
-        margin-bottom: 10px;
-      }
-      
-      .item div {
-        vertical-align: top;
-      }
-      
-      #header {
-        padding: 10px 0px;
-      }
-      
-      #header .name {
-        font-weight: bold;
-        font-size: 140%;
-        text-transform: uppercase;
-        margin-left: 10px;
-      }
-      
-      #header .title {
-        margin-left: 40px;
-      }
-      
-      #header .aside-column {
-        padding-top: 27px;
-        font-size: 80%;
-      }
-      
-      #header .aside-column div {
-        padding-left: 25px;
-      }
-      
-      #content .title {
-        font-weight: bold;
-        font-size: 110%;
-      }
-      
-      .location, .achievment {   
-        margin-left: 25px;
-      }
-      
-      .stack, .subjects {   
-        margin-left: 25px;
-      } 
-      
-      .achievment {
-        margin-top: 10px;
-      }
-      
-      .location {
-        font-style: italic;
-      } 
-      
-      /* stack & subject */
-      
-      .stack div, .subjects div {
-        display: inline-block;
-        font-size: 80%;
-        margin: 5px 2px;
-        padding: 2px 5px;
-        border-radius: 5px;
-        background: rgba( 0, 0, 0, 0.1 );
-      }
-      
-      /* skill & language */
-      
-      .skill-type {
-        padding: 10px 0px;
-      }
-      
-      #languages .section-title {
-        margin-bottom: 20px;
-      }
-      
-      .skill, .language {
-        padding-bottom: 5px;
-      }
-      
-      .skill .name, .language .name {
-           display: inline-block;
-           width: 100px;
-      }
-      
-      .skill .level, .language .level {
-           display: inline;
-      }
-      
-      /* skill dots */
-      
-      .skill .level .dot-1, 
-      .skill .level .dot-2, 
-      .skill .level .dot-3, 
-      .skill .level .dot-4, 
-      .skill .level .dot-5 {
-        height: 7px;
-        width: 7px;
-        background-color: transparent;
-        border: 1px solid #bbb;
-        border-radius: 50%;
-        display: inline-block;
-      }
-      
-      .skill .level-1 .dot-1, 
-      .skill .level-2 .dot-1, 
-      .skill .level-3 .dot-1, 
-      .skill .level-4 .dot-1, 
-      .skill .level-5 .dot-1, 
-      .skill .level-2 .dot-2, 
-      .skill .level-3 .dot-2, 
-      .skill .level-4 .dot-2, 
-      .skill .level-5 .dot-2, 
-      .skill .level-3 .dot-3, 
-      .skill .level-4 .dot-3, 
-      .skill .level-5 .dot-3, 
-      .skill .level-4 .dot-4, 
-      .skill .level-5 .dot-4, 
-      .skill .level-5 .dot-5 {
-        background-color: #bbb; 
-      }
-      
-    </style>
+    <!-- style -->
+  
+  	<link rel="stylesheet" type="text/css" href="resume.css" media="all" /> 
     
   </head>
   <body onload="onLoad()">
@@ -247,7 +28,10 @@
         
         <div class="main-column">
       
-          <div class="name">{{name}}</div>
+          <div class="name">
+            <div class="firstName">{{firstName}}</div>
+            <div class="lastName">{{lastName}}</div>
+          </div>
           {{#title}}
           <div class="title">{{.}}</div>
           {{/title}}
@@ -255,9 +39,24 @@
         </div>
         
         <div class="aside-column">
-          <div class="phone">{{contact.phone}}</div>
-          <div class="email">{{contact.email}}</div> 
-          <div class="address">{{contact.address}}</div>
+          <div class="phone">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M13.372,1.781H6.628c-0.696,0-1.265,0.569-1.265,1.265v13.91c0,0.695,0.569,1.265,1.265,1.265h6.744c0.695,0,1.265-0.569,1.265-1.265V3.045C14.637,2.35,14.067,1.781,13.372,1.781 M13.794,16.955c0,0.228-0.194,0.421-0.422,0.421H6.628c-0.228,0-0.421-0.193-0.421-0.421v-0.843h7.587V16.955z M13.794,15.269H6.207V4.731h7.587V15.269z M13.794,3.888H6.207V3.045c0-0.228,0.194-0.421,0.421-0.421h6.744c0.228,0,0.422,0.194,0.422,0.421V3.888z"></path>
+						</svg>
+            {{contact.phone}}
+          </div>
+          <div class="email">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+						</svg>
+            {{contact.email}}
+          </div> 
+          <div class="address">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
+						</svg>
+            {{contact.address}}
+          </div>
         </div>
         
       </div>
@@ -270,56 +69,39 @@
             <div class="section-title">Experience</div>
             {{#experience}}
               <div class="item">
-                <div class="dates"> 
-                  <div class="end">{{duration.end}} - </div>
-                  <div class="start">{{duration.start}}</div>
+                <div class="title">{{title}}</div>
+                <div class="dates">
+                  {{#duration.start}}
+                    {{duration.end}} - {{duration.start}}
+                  {{/duration.start}}
+                  {{#duration.year}}
+                    {{duration.year}} ( {{duration.duration}} )
+                  {{/duration.year}}
                 </div>
-                <div class="content">
-                  <div class="title">{{title}}</div>
-                  {{#locations}}
-                    <div class="location">{{name}}, {{city}}, {{country}}</div>
-                  {{/locations}}
-                  {{#achievments}}
-                    <div class="achievment">
-                      {{#descriptions}}
-                        <div class="descriptions">{{.}}.</div>
-                      {{/descriptions}}
-                      {{#stack}}
-                        <div class="stack">
-                          {{#os}}<div class="os">{{.}}</div>{{/os}}
-                          {{#code}}<div class="code">{{.}}</div>{{/code}}
-                          {{#techno}}<div class="techno">{{.}}</div>{{/techno}}
-                          {{#base}}<div class="base">{{.}}</div>{{/base}}
-                          {{#ide}}<div class="ide">{{.}}</div>{{/ide}}
-                          {{#technic}}<div class="technic">{{.}}</div>{{/technic}}
-                        </div>
-                      {{/stack}}
-                    </div>
-                  {{/achievments}}
-                </div>
+                {{#locations}}
+                  <div class="location">{{name}}, {{city}}, {{country}}</div>
+                {{/locations}}
+                {{#achievments}}
+                  <div class="achievment">
+                    {{#descriptions}}
+                      <div class="descriptions">{{.}}.</div>
+                    {{/descriptions}}
+                    {{#stack}}
+                      <div class="stack">
+                        <!-- {{#os}}<div class="os">{{.}}</div>{{/os}} -->
+                        {{#code}}<div class="code">{{.}}</div>{{/code}}
+                        {{#script}}<div class="script">{{.}}</div>{{/script}}
+                        {{#base}}<div class="base">{{.}}</div>{{/base}} 
+                        {{#version}}<div class="version">{{.}}</div>{{/version}}
+                        <!-- {{#ide}}<div class="ide">{{.}}</div>{{/ide}} -->
+                        {{#techno}}<div class="techno">{{.}}</div>{{/techno}}
+                        {{#technic}}<div class="technic">{{.}}</div>{{/technic}}
+                      </div>
+                    {{/stack}}
+                  </div>
+                {{/achievments}}
               </div>
             {{/experience}}
-          </div>
-          
-          <div id="education" class="section">
-            <div class="section-title">Education</div>
-            {{#education}}
-              <div class="item">
-                <div class="dates"> 
-                  <div class="end">{{duration.end}} - </div>
-                  <div class="start">{{duration.start}}</div>
-                </div>
-                <div class="content">
-                  <div class="title">{{title}}</div>
-                  {{#locations}}
-                    <div class="location">{{name}}, {{city}}, {{country}}</div>
-                  {{/locations}}
-                  <div class="subjects">
-                    {{#subjects}}<div>{{.}}</div>{{/subjects}}
-                  </div>
-                </div>
-              </div>
-            {{/education}}
           </div>
           
         </div>
@@ -329,16 +111,16 @@
           <div id="skills" class="section">
             <div class="section-title">Skills</div>
             {{#skill-types}}
-              <div class="skill-type">
+              <div class="skill-type skill-type-{{type}}">
                 {{#skills}}
                   <div class="skill">
                     <div class="name">{{name}}</div>
                     <div class="level level-{{level}}">
-                      <div class="dot-1"></div>
-                      <div class="dot-2"></div>
-                      <div class="dot-3"></div>
-                      <div class="dot-4"></div>
-                      <div class="dot-5"></div>
+                      <div class="dot dot-1"></div>
+                      <div class="dot dot-2"></div>
+                      <div class="dot dot-3"></div>
+                      <div class="dot dot-4"></div>
+                      <div class="dot dot-5"></div>
                     </div>
                   </div>
                 {{/skills}}
@@ -355,340 +137,52 @@
               </div>
             {{/languages}}
           </div>
+          
+          <div id="education" class="section">
+            <div class="section-title">Education</div>
+            {{#education}}
+              <div class="item">
+                <div class="title">{{title}}</div>
+                <div class="dates">{{duration.end}} - {{duration.start}}</div>
+                {{#locations}}
+                  <div class="location">{{name}}</div>
+                {{/locations}}
+                <div class="subjects">
+                  {{#subjects}}{{.}}, {{/subjects}}
+                </div>
+              </div>
+            {{/education}}
+          </div>
         
         </div>
         
       </div>
       
       <div id="footer">
-        <div class="contact">
-          {{contact.linkedin}}
+        <div class="centered">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <a href="http://{{contact.linkedin}}">{{contact.linkedin}}</a>
         </div>
       </div>
       
     </script>
 
-    <!-- template library -->
-
+    <!-- mustache template library -->
+    
     <script src="https://unpkg.com/mustache@latest"></script>
     
-    <!-- on-load >>> render template -->
+    <!-- resume data -->
+    
+    <script src="resume.js"></script>
+    
+    <!-- on-load -->    
     
     <script type="text/javascript">
-    
-      var resume_data = {
-          "name": "Gregory VALIGIANI",
-          "title": [
-            "Senior Software Engineer",
-            "+12 years experience",
-            "Ph. D. Computer Science"
-          ],
-          "experience": [{
-              "title": "Senior Software Engineer",
-              "duration": {
-                  "start": 2008,
-                  "end": 2020
-              },
-              "locations": [{
-                  "name": "Amadeus Company",
-                  "sub-name": "Hotel Department",
-                  "city": "Sophia Antipolis",
-                  "country": "FR"
-              }],
-              "achievments": [{
-                  "descriptions": ["Design and Implement streaming process to synchronize Hotel Shopping Data for External Partners"],
-                  "stack": {
-                      "os": ["Windows"],
-                      "code": ["Java"],
-                      "techno": ["Spring", "Kafka", "Quartz"],
-                      "base": ["Couchbase"],
-                      "ide": ["Intellij"],
-                      "version": ["Git"],
-                      "script": ["Bash"]
-                  }
-              },
-              {
-                  "descriptions": ["Implement responsive and ultra-high available Back-end Functionalities for Hotel Availability Engine"],
-                  "stack": {
-                      "os": ["Windows", "Linux"],
-                      "code": ["C++"],
-                      "base": ["Couchbase"],
-                      "techno": ["Protobuf"],
-                      "ide": ["Eclipse"],
-                      "version": ["Git", "Mercurial"],
-                      "script": ["Python"]
-                  }
-              },
-              {
-                  "descriptions": ["Implement CRUD Back-end Functionalities on Hotel Administration Platform"],
-                  "stack": {
-                      "os": ["Windows", "Linux"],
-                      "code": ["C++"],
-                      "base": ["Oracle"],
-                      "ide": ["Eclipse"],
-                      "version": ["Cvs"],
-                      "script": ["Python"]
-                  }
-              }]
-          },
-          {
-              "title": "Junior Software Consultant",
-              "duration": {
-                  "start": 2006,
-                  "end": 2008
-              },
-              "locations": [{
-                  "name": "AKKA Consulting Company",
-                  "city": "Sophia Antipolis",
-                  "country": "FR"
-              }],
-              "achievments": [{
-                  "descriptions": ["Consultant for Amadeus Company, Hotel Department", "Design and Improve user interface on Hotel Administration Interface"],
-                  "stack": {
-                      "os": ["Windows"],
-                      "code": ["Java", "Javascript"],
-                      "techno": ["Struts", "Jsp", "Webwork"],
-                      "ide": ["Eclipse"],
-                      "version": ["Cvs"]
-                  }
-              },
-              {
-                  "descriptions": ["Consultant for Amadeus Company, Quality Department", "Implement data visualization application for Model Based Testing"],
-                  "stack": {
-                      "os": ["Windows"],
-                      "code": ["Java"],
-                      "base": ["MsSQL"],
-                      "techno": ["Swing"],
-                      "ide": ["Eclipse"],
-                      "version": ["ClearCase"]
-                  }
-              }]
-          },
-          {
-              "title": "Ph.D. Candidate, Computer science",
-              "duration": {
-                  "start": 2003,
-                  "end": 2006
-              },
-              "locations": [{
-                  "name": "Paraschool Company",
-                  "city": "Paris",
-                  "country": "FR"
-              },
-              {
-                  "name": "INRIA Institute",
-                  "city": "Rocquencourt",
-                  "country": "FR"
-              },
-              {
-                  "name": "Calais University",
-                  "city": "Calais",
-                  "country": "FR"
-              }],
-              "achievments": [{
-                  "descriptions": ["Set up an automatic system to adapt the proposal of e-learning exercises", "Increase the interaction with an adaptive avatar"],
-                  "stack": {
-                      "os": ["Windows"],
-                      "code": ["Java"],
-                      "techno": ["Swing", "Jsp", "Struts"],
-                      "ide": ["Eclipse"],
-                      "technic": ["Ant Colony Optimisation"]
-                  }
-              }]
-          },
-          {
-              "title": "Research Intern",
-              "duration": {
-                  "start": 2003,
-                  "end": 2003
-              },
-              "locations": [{
-                  "name": "Calais University",
-                  "city": "Calais",
-                  "country": "FR"
-              }],
-              "achievments": [{
-                  "descriptions": ["Remove atmospheric disruptions on satellite photos to detect phytoplancton"],
-                  "stack": {
-                      "os": ["Linux"],
-                      "code": ["C"],
-                      "ide": ["Vim"],
-                      "technic": ["Artificial Evolution"]
-                  }
-              }]
-          },
-          {
-              "title": "Research Intern",
-              "duration": {
-                  "start": 2002,
-                  "end": 2002
-              },
-              "locations": [{
-                  "name": "Napier University",
-                  "city": "Edimburgh",
-                  "country": "GB"
-              }],
-              "achievments": [{
-                  "descriptions": ["Solve timetables problem using Artificial Evolution"],
-                  "stack": {
-                      "os": ["Linux"],
-                      "code": ["C", "Java"],
-                      "ide": ["Vim"],
-                      "technic": ["Artificial Evolution"]
-                  }
-              }]
-          }],
-          "education": [{
-              "title": "PhD Thesis",
-              "duration": {
-                  "start": 2003,
-                  "end": 2006
-              },
-              "locations": [{
-                  "name": "Calais University",
-                  "city": "Calais",
-                  "country": "FR"
-              }],
-              "subjects": ["Computer Science", "Optimization", "Artificial Evolution", "e-Learning"]
-          },
-          {
-              "title": "Research Master",
-              "duration": {
-                  "start": 2002,
-                  "end": 2003
-              },
-              "locations": [{
-                  "name": "Paris VI University",
-                  "city": "Paris",
-                  "country": "FR"
-              }],
-              "subjects": ["Computer Science", "Artificial intelligence", "Pattern recognition"]
-          },
-          {
-              "title": "Engineering Master",
-              "duration": {
-                  "start": 2000,
-                  "end": 2003
-              },
-              "locations": [{
-                  "name": "ENSTA Engineering School",
-                  "city": "Paris",
-                  "country": "FR"
-              }],
-              "subjects": ["Computer Science", "Programming", "Multimedia", "Robotic"]
-          }],
-          "publication": [{
-              "title": "Étude Comportementale des Hommilières pour l'Optimisation",
-              "authors": ["Grégory Valigiani", "Évelyne Lutton", "Pierre Collet"],
-              "in": "EpiNet, EPI Electronic Magazine, n° 83, march 2006, Web Article"
-          },
-          {
-              "title": "Automatic Rating Process to Audit a Man-Hill",
-              "authors": ["Grégory Valigiani", "Évelyne Lutton", "Yannick Jamont", "Raphaël Biojout", "Pierre Collet"],
-              "in": "In WSEAS Transactions on Advances in Engineering Education, p1-7, Issue 1, Volume 3, January, ISSN 1790-1979, 2006, Refereed Journal Article"
-          },
-          {
-              "title": "Evaluating a Real-Size Man-Hill",
-              "authors": ["Grégory Valigiani", "Évelyne Lutton", "Yannick Jamont", "Raphaël Biojout", "Pierre Collet"],
-              "in": "ECE'WSEAS'05E, 17-19 November, Miami, Florida, USA, 2005, Refereed Conference Contribution"
-          },
-          {
-              "title": "Experimenting with a Real-Size Man-Hill to Optimize Pedagogical Paths",
-              "authors": ["Grégory Valigiani", "Raphaël Biojout", "Yannick Jamont", "Évelyne Lutton", "Pierre Collet"],
-              "in": "SAC'05 Proceedings, 13-17 mars, Santa Fe, New Mexico, USA, 2005, Refereed Conference Contribution"
-          },
-          {
-              "title": "Analysis of GP Improvement Techniques over the Real-World Inverse Problem of Ocean Colour",
-              "authors": ["Grégory Valigiani", "Cyril Fonlupt", "Pierre Collet"],
-              "in": "Genetic Programming 7th European Conference, EuroGP 2004, Proceedings, LNCS, Vol. 3003, pp. 174-186, Springer-Verlag, 5-7 April 2004, Refereed Conference Contribution"
-          }],
-          "contact": {
-            "phone": "+33.6.20.83.65.54",
-            "email": "gregory.valigiani@gmail.com",
-            "address": "Cagnes sur mer, FR",
-            "linkedin": "linkedin.com/in/gregoryvaligiani"
-          },
-          "skill-types": [
-            {
-              "type": "code",
-              "skills": [
-                {
-                  "name": "C++",
-                  "level": 4
-                },{
-                  "name": "Java",
-                  "level": 4
-                }
-              ]
-            },{
-              "type": "script",
-              "skills": [
-                {
-                  "name": "Python",
-                  "level": 4
-                },{
-                  "name": "Shell",
-                  "level": 4
-                }
-              ]
-            },{
-              "type": "base",
-              "skills": [
-                {
-                  "name": "Couchase",
-                  "level": 4
-                },{
-                  "name": "Oracle",
-                  "level": 4
-                }
-              ]
-            },{
-              "type": "version",
-              "skills": [
-                {
-                  "name": "Git",
-                  "level": 4
-                },{
-                  "name": "Cvs",
-                  "level": 3
-                },{
-                  "name": "Mercurial",
-                  "level": 2
-                }
-              ]
-            },{
-              "type": "techno",
-              "skills": [
-                {
-                  "name": "Protobuf",
-                  "level": 4
-                },{
-                  "name": "Spring",
-                  "level": 3
-                },{
-                  "name": "Kafka",
-                  "level": 4
-                },{
-                  "name": "Quartz",
-                  "level": 3
-                }
-              ]
-            }
-          ],
-          "languages": [{
-            "name": "French",
-            "level": "Native"
-          },{
-            "name": "English",
-            "level": "Business"
-          }]
-      };
-                  
       function onLoad() {
         var template_html = document.getElementById( 'template' ).innerHTML;
         document.getElementById( 'resume' ).innerHTML = Mustache.render( template_html, resume_data );
       }
-    
     </script>
+    
   </body>
 </html>

@@ -1,0 +1,397 @@
+/* --------------- skeleton --------------- */
+    
+body {
+
+  --main-radius: 5px;
+  
+  --width: 900px;
+  --margin: 10px;
+  
+  --tab: 25px;
+  --small-tab: 15px;
+          
+  --aside-width: 250px;
+  --main-width: calc( var(--width) - var(--aside-width) - 10px );
+  
+  --skill-width: 110px;
+}
+
+#resume {
+  margin: var(--margin) auto;
+  width: var(--width);
+}
+
+#header {
+  display: flex;
+  width: var(--width);
+}
+     
+#footer {
+  display: flex;
+  width: var(--width);
+  padding: var(--margin) 0px;
+}
+
+.centered {
+  margin: 0px auto;
+}
+
+#content {
+  display: flex;  
+  width: var(--width);
+}
+
+.main-column {
+  display: inline-block;
+  vertical-align: top;
+  width: var(--main-width);
+  padding: var(--margin);
+}
+
+.aside-column {
+  display: inline-block;
+  vertical-align: top;
+  width: var(--aside-width);
+  padding: var(--margin);
+}
+
+#header .aside-column div {
+  margin-left: calc( var(--margin) + 5px );
+}
+
+.section {
+  margin-bottom: calc( 2 * var(--margin) );
+}
+
+.section-title {
+  margin: var(--margin) 0;
+}
+
+.item {
+  margin: var(--margin) 0px;
+}
+
+#experience .item {
+  margin-bottom: calc( 2 * var(--margin) );
+}
+
+#header .name .firstName,
+#header .name .lastName {
+  display: inline-block;
+}
+
+#header .title,
+#experience .location,
+#experience .achievment {
+  margin-left: var(--tab);
+}
+
+#education .dates,
+#education .location,
+#education .subjects,
+.skill,
+.language {
+  margin-left: var(--small-tab);
+}
+
+#experience .title, .dates {
+  display: inline-block;
+}
+
+#experience .title {
+    padding-right: var(--margin);
+}
+
+#experience .achievment,
+#education .subjects {
+  margin-top: var(--margin);
+}
+
+#education .subject {  
+  display: inline-block;
+}
+
+.stack {
+  margin-top: calc( var(--margin) / 2 );
+}
+
+.stack div {
+  display: inline-block;
+  margin-right: calc( var(--margin) / 2 );
+} 
+
+.skill-type {
+  margin-bottom: var(--margin);
+}
+
+.skill .name, .language .name {
+   display: inline-block;
+   width: var(--skill-width);
+}
+
+.skill, .language {
+  margin-bottom: calc( var(--margin) / 2 ) );
+}
+
+/* --------------- font --------------- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+#header .name {
+  font-size: 140%;
+  text-transform: uppercase; 
+  font-weight: bold;
+}
+
+#header .aside-column {
+  padding-top: 35px; /* size of header name + padding */
+}
+
+.section-title { 
+  text-transform: uppercase;
+}
+
+#experience .title {
+  font-weight: bold;
+  font-size: 130%; 
+  text-transform: uppercase;
+}
+
+#experience .dates {
+  font-size: 110%;
+}
+
+#education .title {
+  font-weight: bold;
+  font-size: 110%; 
+  text-transform: uppercase;
+} 
+
+.stack div {
+  font-size: 80%;
+} 
+
+#footer {
+  text-align: center;
+  text-style: italic;
+}
+
+/* --------------- colors --------------- */
+     
+body {
+  
+  --main-background-color: white;
+  --main-border-color: #aaa;
+  --main-text-color: black;
+
+  --aside-background-color: #f5f8fa;
+  --aside-text-color: black;
+  
+  --footer-background-color: #f5f8fa;
+  --footer-text-color: black;
+  
+  --section-text-color: rgba(0,0,0,0.4);
+  --section-border-color: rgba(0,0,0,0.2);
+  
+  --shadow-color: rgba(0,0,0,0.2);
+  
+  --highlight-color: #457b9d;
+  --highlight-color: #0072BC;
+  
+  --link-text-color: var(--highlight-color);
+  --minor-text-color: var(--highlight-color);
+  --skill-color: var(--highlight-color);
+  --separator-color: var(--highlight-color);
+  --icon-color: var(--highlight-color);
+
+  --skill-default-color: var(--skill-color);
+  --skill-code-color: var(--skill-color);
+  --skill-script-color: var(--skill-color);
+  --skill-base-color: var(--skill-color);
+  --skill-version-color: var(--skill-color);
+  --skill-techno-color: var(--skill-color);
+  --skill-ide-color: var(--skill-color);
+  --skill-technic-color: var(--skill-color);
+}
+
+#resume {
+  color: var(--main-text-color);
+  background: white;
+  border: 1px solid var(--main-border-color);
+  border-radius: var(--main-radius);
+  box-shadow: 2px 2px 2px 1px var(--shadow-color);
+}
+
+#header {
+  border-top-left-radius: var(--main-radius);
+  border-top-right-radius: var(--main-radius);
+  background: white;
+  color: var(--header-text-color);
+}
+
+#footer {
+  border-bottom-left-radius: var(--main-radius);
+  border-bottom-right-radius: var(--main-radius);
+  background: var(--footer-background-color);
+  color: var(--footer-text-color);
+}
+
+.main-column {
+  background: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+#header .main-column {
+  border-top-left-radius: var(--main-radius);
+}
+
+.aside-column {
+  background: var(--aside-background-color);
+  color: var(--aside-text-color);
+}
+
+#header .aside-column {
+  border-top-right-radius: var(--main-radius);
+}
+
+.section-title {
+  color: var(--section-text-color);
+  border-bottom: 1px solid var(--section-border-color);
+}
+
+.dates, .location {
+  color: var(--minor-text-color);
+}
+
+a { 
+  color: var(--link-text-color);
+} 
+
+/* --------------- stack --------------- */
+
+.stack div {
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--main-text-color) !important; /* var(--skill-default-color); */
+  box-shadow: 1px 1px 2px var(--shadow-color); 
+  color: var(--main-text-color) !important; /* var(--skill-default-color); */
+} 
+
+.stack .code {
+  border-color: var(--skill-code-color);
+  color: var(--skill-code-color);
+}
+
+.stack .script {
+  border-color: var(--skill-script-color);
+  color: var(--skill-script-color);
+} 
+
+.stack .base {
+  border-color: var(--skill-base-color);
+  color: var(--skill-base-color);
+}
+
+.stack .version {
+  border-color: var(--skill-version-color);
+  color: var(--skill-version-color);
+}
+
+.stack .techno {
+  border-color: var(--skill-techno-color);
+  color: var(--skill-techno-color);
+}
+
+.stack .ide {
+  border-color: var(--skill-ide-color);
+  color: var(--skill-ide-color);
+}
+
+.stack .technic {
+  border-color: var(--skill-technic-color);
+  color: var(--skill-technic-color);
+} 
+
+/* --------------- skills --------------- */
+
+.skill .level, .language .level {
+     display: inline;
+}
+
+.skill .level .dot {
+  height: 7px;
+  width: 7px;
+  border: 1px solid var(--skill-default-color);
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--margin);
+}
+  
+.skill .level-1 .dot-2,
+.skill .level-1 .dot-3,
+.skill .level-1 .dot-4,
+.skill .level-1 .dot-5,
+.skill .level-2 .dot-3,
+.skill .level-2 .dot-4,
+.skill .level-2 .dot-5,
+.skill .level-3 .dot-4,
+.skill .level-3 .dot-5,
+.skill .level-4 .dot-5 {
+  background-color: transparent !important; 
+}
+
+.skill-type-code .skill .level .dot {
+  border-color: var(--skill-code-color);
+  background-color: var(--skill-code-color);
+}
+
+.skill-type-script .skill .level .dot {
+  border-color: var(--skill-script-color);
+  background-color: var(--skill-script-color);
+} 
+
+.skill-type-base .skill .level .dot {
+  border-color: var(--skill-base-color);
+  background-color: var(--skill-base-color);
+}
+
+.skill-type-version .skill .level .dot {
+  border-color: var(--skill-version-color);
+  background-color: var(--skill-version-color);
+}
+
+.skill-type-techno .skill .level .dot {
+  border-color: var(--skill-techno-color);
+  background-color: var(--skill-techno-color);
+}
+
+.skill-type-ide .skill .level .dot {
+  border-color: var(--skill-ide-color);
+  background-color: var(--skill-ide-color);
+}
+
+.skill-type-technic .skill .level .dot {
+  border-color: var(--skill-technic-color);
+  background-color: var(--skill-technic-color);
+}
+
+/* --------------- icons --------------- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: var(--icon-color);
+}
+
+.svg-icon circle {
+  stroke: var(--icon-color);
+  stroke-width: 1;
+}
