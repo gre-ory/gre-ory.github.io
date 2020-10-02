@@ -50,7 +50,6 @@ body {
 
 .aside-column {
   display: inline-block;
-  vertical-align: top;
   width: var(--aside-width);
   padding: var(--margin);
 }
@@ -60,7 +59,7 @@ body {
 }
 
 .section {
-  margin-bottom: calc( 2 * var(--margin) );
+  margin-bottom: calc( 3 * var(--margin) );
 }
 
 .section-title {
@@ -72,6 +71,10 @@ body {
 }
 
 #experience .item {
+  margin-bottom: calc( 3 * var(--margin) );
+}
+
+#education .item {
   margin-bottom: calc( 2 * var(--margin) );
 }
 
@@ -121,7 +124,7 @@ body {
 } 
 
 .skill-type {
-  margin-bottom: var(--margin);
+  margin-bottom: calc( 2 * var(--margin) );
 }
 
 .skill .name, .language .name {
@@ -130,7 +133,7 @@ body {
 }
 
 .skill, .language {
-  margin-bottom: calc( var(--margin) / 2 ) );
+  margin-bottom: calc( var(--margin) / 2 );
 }
 
 /* --------------- font --------------- */
@@ -275,9 +278,9 @@ a {
 .stack div {
   padding: 2px 5px;
   border-radius: 3px;
-  border: 1px solid var(--main-text-color) !important; /* var(--skill-default-color); */
+  border: 1px solid var(--main-text-color) !important;
   box-shadow: 1px 1px 2px var(--shadow-color); 
-  color: var(--main-text-color) !important; /* var(--skill-default-color); */
+  color: var(--main-text-color) !important;
 } 
 
 .stack .code {
@@ -324,10 +327,13 @@ a {
 .skill .level .dot {
   height: 7px;
   width: 7px;
-  border: 1px solid var(--skill-default-color);
   border-radius: 50%;
   display: inline-block;
-  background-color: var(--margin);
+}
+  
+.skill .level .dot {
+  border: 1px solid var(--skill-default-color); 
+  background-color: var(--skill-default-color);
 }
   
 .skill .level-1 .dot-2,
@@ -339,8 +345,9 @@ a {
 .skill .level-2 .dot-5,
 .skill .level-3 .dot-4,
 .skill .level-3 .dot-5,
-.skill .level-4 .dot-5 {
-  background-color: transparent !important; 
+.skill .level-4 .dot-5 { 
+  border: 1px solid var(--shadow-color) !important;
+  background-color: var(--shadow-color) !important; 
 }
 
 .skill-type-code .skill .level .dot {
@@ -394,4 +401,42 @@ a {
 .svg-icon circle {
   stroke: var(--icon-color);
   stroke-width: 1;
+}
+
+/* --------------- print --------------- */
+
+@media print {
+
+  body {
+    width: 940px;
+    height: 1174px;
+    margin: 0px;
+    padding: 0px;
+    
+    --main-radius: 0px;
+    --width: 940px;
+    --aside-width: 270px;
+  }
+  
+  .aside-column {
+    padding-right: 30px;
+  }
+  
+  #experience {
+    padding-bottom: 10px;
+  }
+  
+  #footer {
+    padding-bottom: 30px;
+  }
+  
+  #resume {
+    margin: 0px;
+    border: 0px;
+  }
+  
+  #resume {
+    box-shadow: none;
+  }
+
 }
