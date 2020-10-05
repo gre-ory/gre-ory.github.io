@@ -111,7 +111,7 @@ body {
 }
 
 #education .subject {  
-  display: inline-block;
+  /* display: inline-block;*/
 }
 
 .stack {

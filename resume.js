@@ -7,7 +7,7 @@ var resume_data = {
     "lastName": "Valigiani",
     "title": [
       "Senior Software Engineer",
-      "+12 years experience",
+      "+14 years experience",
       "Ph. D. Computer Science"
     ],
     "experience": [{
