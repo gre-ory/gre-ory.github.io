@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/amnezic/precache-manifest.dc288cf7fb4ab4eb5084a3248f0cae82.js"
+  "/amnezic/precache-manifest.dffe10f550f57e435ad0a92d79097d2a.js"
 );
 
 workbox.clientsClaim();
