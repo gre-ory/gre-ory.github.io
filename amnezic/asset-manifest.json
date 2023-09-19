@@ -1,15 +1,15 @@
 {
-  "main.css": "/amnezic/static/css/main.ef352877.chunk.css",
-  "main.js": "/amnezic/static/js/main.d9ff6ffd.chunk.js",
-  "main.js.map": "/amnezic/static/js/main.d9ff6ffd.chunk.js.map",
-  "runtime~main.js": "/amnezic/static/js/runtime~main.1d8fcf87.js",
-  "runtime~main.js.map": "/amnezic/static/js/runtime~main.1d8fcf87.js.map",
-  "static/js/2.ffcba8c4.chunk.js": "/amnezic/static/js/2.ffcba8c4.chunk.js",
-  "static/js/2.ffcba8c4.chunk.js.map": "/amnezic/static/js/2.ffcba8c4.chunk.js.map",
-  "index.html": "/amnezic/index.html",
-  "precache-manifest.dc288cf7fb4ab4eb5084a3248f0cae82.js": "/amnezic/precache-manifest.dc288cf7fb4ab4eb5084a3248f0cae82.js",
-  "service-worker.js": "/amnezic/service-worker.js",
-  "static/css/main.ef352877.chunk.css.map": "/amnezic/static/css/main.ef352877.chunk.css.map",
-  "static/media/App.css": "/amnezic/static/media/avatars-dhigital.e3d969dd.webp",
-  "static/media/music.png": "/amnezic/static/media/music.45a44973.png"
+  "main.css": "/static/css/main.b78ae0c9.chunk.css",
+  "main.js": "/static/js/main.c46b8262.chunk.js",
+  "main.js.map": "/static/js/main.c46b8262.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.ffcba8c4.chunk.js": "/static/js/2.ffcba8c4.chunk.js",
+  "static/js/2.ffcba8c4.chunk.js.map": "/static/js/2.ffcba8c4.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.fb62871dc65591905168842ea92736d4.js": "/precache-manifest.fb62871dc65591905168842ea92736d4.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.b78ae0c9.chunk.css.map": "/static/css/main.b78ae0c9.chunk.css.map",
+  "static/media/App.css": "/static/media/avatars-dhigital.e3d969dd.webp",
+  "static/media/music.png": "/static/media/music.45a44973.png"
 }
